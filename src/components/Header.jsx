@@ -8,7 +8,7 @@ export default function Header(){
         <div className="header-content">
           <div className="logo-container">
             <a href="#" className="logo">
-              <img src="/assets/images/Barzel-Final-Ver-11.png" alt="BARZEL Logo" />
+              <img src="src/assets/images/Barzel-Final-Ver-11.png" alt="BARZEL Logo" />
             </a>
             <div className="logo-subtitle">Coached by Barel Klor</div>
           </div>

@@ -9,11 +9,12 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-accessibility": "^0.13.1",
-    "react-accessibility-widget": "^0.1.9",
+    "react-calendly": "^4.4.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "vite": "^5.0.0"
+    "patch-package": "^8.0.1",
+    "postinstall-postinstall": "^2.1.0",
+    "vite": "^6.4.1"
   }
 }
