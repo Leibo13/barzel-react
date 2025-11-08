@@ -1,10 +1,12 @@
 import React from 'react'
+import { png } from '../assets/images/6.png'
+
 export default function Footer(){
   return (
     <footer id="contact" className="footer">
       <div className="container">
         <div className="footer-content">
-          <img src="src/assets/images/6.png" width="150px" alt="BARZEL Coaching Logo" className="footer-logo" />
+          <img src={png} width="150px" alt="BARZEL Coaching Logo" className="footer-logo" />
           <div className="footer-contact">
             <a href="mailto:Barelklor@gmail.com">Barelklor@gmail.com</a>
             <a href="tel:+972546222479">054-6222479</a>
