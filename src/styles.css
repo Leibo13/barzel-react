@@ -694,7 +694,7 @@ body {
 .about {
     padding: 120px 0;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('src/assets/images/NC1_0363.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('NC1_0363.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

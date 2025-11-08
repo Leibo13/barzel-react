@@ -1,20 +1,27 @@
 import React, { useState } from 'react'
-import {img} from '../assets/images/Barzel-Final-Ver-11.png'
+import img11 from '../assets/images/img-11.png'  // ✅ default import, not {png}
 
-export default function Header(){
+export default function Header() {
   const [open, setOpen] = useState(false)
+
   return (
     <header className="header">
       <div className="container">
         <div className="header-content">
           <div className="logo-container">
             <a href="#" className="logo">
-              <img src={img} alt="BARZEL Logo" />
+              <img src={img11} alt="BARZEL Logo" />  {/* ✅ use logo */}
             </a>
             <div className="logo-subtitle">Coached by Barel Klor</div>
           </div>
-          <button className="nav-toggle" aria-label="תפריט ניווט" onClick={() => setOpen(v=>!v)}>☰</button>
-          <nav className={`nav ${open? 'show':''}`}>
+          <button
+            className="nav-toggle"
+            aria-label="תפריט ניווט"
+            onClick={() => setOpen(v => !v)}
+          >
+            ☰
+          </button>
+          <nav className={`nav ${open ? 'show' : ''}`}>
             <a href="#hero" className="cta-btn-small">להתחיל</a>
             <a href="#about">נעים להכיר</a>
             <a href="#pricing">תוכניות</a>
