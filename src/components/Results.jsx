@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import initPremiumReveal from '../utils/premiumReveal'
 
 const rawHtml = `
 <section id="results" class="results">
@@ -211,5 +212,11 @@ const rawHtml = `
 `
 
 export default function Results(){
-  return <div dangerouslySetInnerHTML={{__html: rawHtml}} />
+    useEffect(()=>{
+        // Ensure the dynamically-inserted result cards are observed for reveal animations
+        const cleanup = initPremiumReveal({ selector: '.result-card' })
+        return () => { if (cleanup) cleanup(); }
+    }, [])
+
+    return <div dangerouslySetInnerHTML={{__html: rawHtml}} />
 }
